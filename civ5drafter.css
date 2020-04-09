@@ -16,12 +16,19 @@ body {
 #header {
 	margin: auto;
     width: 100%;
-    height: 30px;
+    height: auto;
 }
 
 .headline {
 	font-family: Montserrat;
 	font-size: 20px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.subheadline {
+	font-family: Montserrat;
+	font-size: 14;
 	text-align: center;
 	color: #ffffff;
 }
@@ -126,12 +133,9 @@ input, select {
 	text-align: center;
 }
 
-.nqonlybox {
-	
-}
-
 #buttons {
 	margin: auto;
+	margin-top: 50px;
 	top: 770px;
 	left: 50%;
     width: 750px;
