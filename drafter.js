@@ -32,7 +32,7 @@
 	allCivs["Netherlands"] = true;
 	allCivs["Norway"] = true;
 	allCivs["Nubia"] = true;
-	allCivs["Ottomans"] = true;
+	allCivs["Ottoman"] = true;
 	allCivs["Persia"] = true;
 	allCivs["Phonecia"] = true;
 	allCivs["Poland"] = true;
