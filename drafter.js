@@ -1,4 +1,4 @@
-﻿const civ_list = ".America, .Arabia, .Australia, .Aztec, .Brazil, .Canada, .China, .Cree, .Egypt, .England, .France, .Georgia, .Germany, .Gran_Colombia, .Greece, .Hungary, .Inca, .India, .Indonesia, .Japan, .Khmer, .Kongo, .Korea, .Macedon, .Mali, .Maori, .Mapuche, .Maya, .Mongolia, .Netherlands, .Norway, .Nubia, .Ottomans, .Persia, .Phonecia, .Poland, .Rome, .Russia, .Scotland, .Scythia, .Spain, .Sumeria, .Sweden, .Zulu"
+﻿const civ_list = ".America, .Arabia, .Australia, .Aztec, .Brazil, .Canada, .China, .Cree, .Egypt, .England, .France, .Georgia, .Germany, .Gran_Colombia, .Greece, .Hungary, .Inca, .India, .Indonesia, .Japan, .Khmer, .Kongo, .Korea, .Macedon, .Mali, .Maori, .Mapuche, .Maya, .Mongolia, .Netherlands, .Norway, .Nubia, .Ottoman, .Persia, .Phonecia, .Poland, .Rome, .Russia, .Scotland, .Scythia, .Spain, .Sumeria, .Sweden, .Zulu"
 
 $(document).ready(function() {
 
@@ -36,7 +36,7 @@ $(document).ready(function() {
 	allCivs["Netherlands"] = true;
 	allCivs["Norway"] = true;
 	allCivs["Nubia"] = true;
-	allCivs["Ottomans"] = true;
+	allCivs["Ottoman"] = true;
 	allCivs["Persia"] = true;
 	allCivs["Phonecia"] = true;
 	allCivs["Poland"] = true;
