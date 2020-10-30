@@ -29,5 +29,5 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.KEY }}
           source: "." 
-          target: "/var/test" 
+          target: "/var/www/matthewdewhurst.com" 
 
