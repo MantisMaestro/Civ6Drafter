@@ -14,8 +14,8 @@ jobs:
       uses: appleboy/scp-action@v0.1.1
       env:
         host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
         port: ${{ secrets.PORT }}
+        username: ${{ secrets.USERNAME }}        
         key: ${{ secrets.KEY }}
       with:
         source: "."
