@@ -1,4 +1,5 @@
-﻿const civ_list = ".America, .Arabia, .Australia, .Aztec, .Brazil, .Canada, .China, .Cree, .Egypt, .England, .France, .Georgia, .Germany, .Gran_Colombia, .Greece, .Hungary, .Inca, .India, .Indonesia, .Japan, .Khmer, .Kongo, .Korea, .Macedon, .Mali, .Maori, .Mapuche, .Maya, .Mongolia, .Netherlands, .Norway, .Nubia, .Ottoman, .Persia, .Phonecia, .Poland, .Rome, .Russia, .Scotland, .Scythia, .Spain, .Sumeria, .Sweden, .Zulu"
+﻿const civ_list = ".America, .Arabia, .Australia, .Aztec, .Babylon, .Brazil, .Byzantium, .Canada, .China, .Cree, .Egypt, .England, .Ethiopia, .France, .Gaul, .Georgia, .Germany, .Gran_Colombia, .Greece, .Hungary, .Inca, .India, .Indonesia, .Japan, .Khmer, .Kongo, .Korea, .Macedon, .Mali, .Maori, .Mapuche, .Maya, .Mongolia, .Netherlands, .Norway, .Nubia, .Ottoman, .Persia, .Phonecia, .Poland, .Rome, .Russia, .Scotland, .Scythia, .Spain, .Sumeria, .Sweden, .Zulu"
+const totalCivs = 48;
 
 $(document).ready(function() {
 
@@ -8,13 +9,17 @@ $(document).ready(function() {
 	allCivs["Arabia"] = true;
 	allCivs["Australia"] = true;
 	allCivs["Aztec"] = true;
+	allCivs["Babylon"] = true;
 	allCivs["Brazil"] = true;
+	allCivs["Byzantium"] = true;
 	allCivs["Canada"] = true;
 	allCivs["China"] = true;
 	allCivs["Cree"] = true;
 	allCivs["Egypt"] = true;
 	allCivs["England"] = true;
+	allCivs["Ethiopia"] = true;
 	allCivs["France"] = true;
+	allCivs["Gaul"] = true;
 	allCivs["Georgia"] = true;
 	allCivs["Germany"] = true;
 	allCivs["Gran_Colombia"] = true;
@@ -50,7 +55,6 @@ $(document).ready(function() {
 	allCivs["Zulu"] = true;
 	
 	var bannedCivs = 0;
-	var totalCivs = 44;
 	var titleHTML = "";
 	var allclicked = false;
 	
@@ -93,7 +97,6 @@ $(document).ready(function() {
 	  		);
 					
 	  		//update the title
-	  		totalCivs = 44;
 	  		bannedCivs = 0;
 			updateBanned(totalCivs, bannedCivs);
 
@@ -126,7 +129,6 @@ $(document).ready(function() {
   		});
   		
   		//update the title
-  		totalCivs = 42;
   		bannedCivs = totalCivs;
 		updateBanned(totalCivs, bannedCivs);
 		
@@ -162,7 +164,7 @@ $(document).ready(function() {
   		});
 		
 		//check if the user is trying to pick more civs than avaliable
-		if (neededCivs > 42) {
+		if (neededCivs > totalCivs) {
 			$("#results").html("<p class='drawerror'>There are not enough civilizations for " + players + " players to have " + rndpicks + " picks each!</br>Select a different number of players or lower the number of random picks and try again!</p>");
 
 		// check if we have enough enabled civs process the draft
